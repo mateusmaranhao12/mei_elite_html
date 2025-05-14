@@ -4,7 +4,6 @@ document.getElementById('checkout-form').addEventListener("submit", function (e)
     let nome = document.getElementById('nome')
     let email = document.getElementById('email')
     let whatsapp = document.getElementById('whatsapp')
-    let cpf = document.getElementById('cpf')
     let botao = e.target.querySelector("button[type='submit']")
 
     let isValid = true
@@ -32,14 +31,6 @@ document.getElementById('checkout-form').addEventListener("submit", function (e)
         whatsapp.classList.remove('is-invalid')
     }
 
-    const cpfDigits = cpf.value.replace(/\D/g, '')
-    if (cpfDigits.length !== 11) {
-        cpf.classList.add('is-invalid')
-        isValid = false
-    } else {
-        cpf.classList.remove('is-invalid')
-    }
-
     if (isValid) {
         // Feedback visual de carregamento
         botao.disabled = true
@@ -49,8 +40,7 @@ document.getElementById('checkout-form').addEventListener("submit", function (e)
         const templateParams = {
             nome: nome.value,
             email: email.value,
-            whatsapp: whatsapp.value,
-            cpf: cpf.value
+            whatsapp: whatsapp.value
         }
 
         emailjs.send(
