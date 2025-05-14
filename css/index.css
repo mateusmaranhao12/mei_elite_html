@@ -1,0 +1,114 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.highlight {
+    color: #ff3333;
+    font-weight: bold;
+}
+
+.central-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 30px auto;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.btn-acessar {
+    background-color: #d80000;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.25rem;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn-acessar:hover {
+    background-color: #b80000;
+    color: white;
+}
+
+.checkout-section {
+    min-height: 100vh;
+    background-color: white;
+    padding-top: 60px;
+}
+
+.btn-dark {
+    background-color: black !important;
+    border-color: black !important;
+}
+
+.btn-dark:hover {
+    background-color: #333 !important;
+}
+
+button.btn-dark.position-absolute {
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.border {
+    border: 1px solid #ccc !important;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+.fs-5 {
+    font-size: 1.25rem;
+}
+
+input.form-control {
+    font-size: 0.95rem;
+    padding: 10px;
+}
+
+input.form-control:focus {
+    border-color: #000;
+    box-shadow: none;
+}
+
+.invalid-feedback {
+    font-size: 0.8rem;
+}
+
+.capa {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}

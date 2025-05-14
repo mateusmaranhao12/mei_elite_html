@@ -1,0 +1,28 @@
+body {
+    background-color: white;
+    color: black;
+}
+
+.voltar-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.voltar-btn:hover {
+    color: #ccc;
+}
+
+.capa {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
